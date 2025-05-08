@@ -1,0 +1,17 @@
+<div class="card mx-auto mt-5 box-shadow" style="max-width: 350px;height: auto;">
+    <div class="card-header text-center bg-body  rounded-top">
+        <h2>Counter:{{value}}</h2>
+     </div>
+   
+    <div class="card-body p-3 ">
+        <button class="btn btn-outline-primary m-1" (click)="Increment()">Increment</button>
+        <button class="btn btn-outline-danger m-1" (click)="Decrement()">Decrement</button>
+        <button class="btn btn-outline-secondary m-1" (click)="Reset()">Reset</button>
+        <div [ngSwitch]="getCounterStatus()" class="text-center mt-2">
+            <h5 *ngSwitchCase="'possitive'" [ngStyle]="{color:'blue',opacity:'0.7'}">The counter is posssitive </h5>
+            <h5 *ngSwitchCase="'negative'" [ngStyle]="{color:'red',opacity:'0.6'}">The counter is negative</h5>
+            <h5 *ngSwitchCase="'zero'"[ngStyle]="{color:'gray'}">The counter is set to zero</h5>
+        </div>
+    </div>
+
+</div>
