@@ -1,0 +1,32 @@
+<div class="container py-5" style="width: 40rem;">
+    <h1 class="text-center mb-4">Tic Tac Toe</h1>
+  
+    <div *ngIf="!winner && !isDraw" class="alert alert-info text-center">
+      Player {{ currentPlayer }}'s turn
+    </div>
+  
+    <div class="d-flex justify-content-center">
+      <div class="board d-grid gap-2">
+        <div
+          *ngFor="let cell of board; let i = index"
+          (click)="makeMove(i)"
+          class="cell btn btn-outline-dark"
+        >
+          {{ cell }}
+        </div>
+      </div>
+    </div>
+  
+    <div *ngIf="winner" class="alert alert-success text-center mt-4">
+      🎉 Player {{ winner }} wins!
+    </div>
+  
+    <div *ngIf="isDraw && !winner" class="alert alert-warning text-center mt-4">
+      🤝 It's a draw!
+    </div>
+  
+    <div class="text-center mt-4">
+      <button (click)="resetGame()" class="btn btn-primary">Reset Game</button>
+    </div>
+  </div>
+  
