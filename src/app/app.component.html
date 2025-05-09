@@ -15,6 +15,9 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/profile-card">Profile-Card</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home">Home</a>
+          </li>
          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -22,8 +25,8 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" routerLink="/counter">Counter</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" routerLink="/todo-list">Todo-List</a></li>
+              <li><a class="dropdown-item" routerLink="/stop-watch">Stop-Watch</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -33,5 +36,7 @@
       </div>
     </div>
   </nav>
+  
 </div>
+
 <router-outlet></router-outlet>

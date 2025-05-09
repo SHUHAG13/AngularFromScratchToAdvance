@@ -1,0 +1,11 @@
+<div class="card mx-auto my-5 text-center p-2 bg-body shadow-lg rounded" style="width: 18rem;">
+    <div class="card-header">
+        <h2>Stop Watch</h2>
+    </div>
+  <div class="card-body">
+    <h5 class="time  text-danger p-2">{{elapsedTime | number:"1.1-1"}} seconds</h5>
+    <button class="btn btn-success me-1" (click)="startStop()">{{isRunning?"Stop":"Start"}}</button>
+    <button  class="btn btn-secondary" (click)="resetTimer()" [disabled]="!elapsedTime">Reset</button>
+  </div>
+
+</div>
