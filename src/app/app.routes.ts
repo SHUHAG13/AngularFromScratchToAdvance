@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { StopWatchComponent } from './pages/stop-watch/stop-watch.component';
 import { GuessingGameComponent } from './pages/guessing-game/guessing-game.component';
 import { TicTacToeComponent } from './pages/tic-tac-toe/tic-tac-toe.component';
+import { DynamicFilterComponent } from './pages/dynamic-filter/dynamic-filter.component';
 
 export const routes: Routes = [
     {path:"profile-card",component:ProfileCardComponent},
@@ -14,5 +15,6 @@ export const routes: Routes = [
     {path:'home',component:HomeComponent},
     {path:'stop-watch',component:StopWatchComponent},
     {path:'guess-game',component:GuessingGameComponent},
-    {path:"tic-tac-toe",component:TicTacToeComponent}
+    {path:"tic-tac-toe",component:TicTacToeComponent},
+    {path:'dynamic-filter',component:DynamicFilterComponent}
 ];
