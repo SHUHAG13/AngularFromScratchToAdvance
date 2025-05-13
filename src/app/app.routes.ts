@@ -8,6 +8,7 @@ import { GuessingGameComponent } from './pages/guessing-game/guessing-game.compo
 import { TicTacToeComponent } from './pages/tic-tac-toe/tic-tac-toe.component';
 import { DynamicFilterComponent } from './pages/dynamic-filter/dynamic-filter.component';
 import { FaqAccordionComponent } from './pages/faq-accordion/faq-accordion.component';
+import { JokesComponent } from './pages/jokes/jokes.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -19,5 +20,6 @@ export const routes: Routes = [
     {path:'guess-game',component:GuessingGameComponent},
     {path:"tic-tac-toe",component:TicTacToeComponent},
     {path:'dynamic-filter',component:DynamicFilterComponent},
-    {path:'faq-accordion',component:FaqAccordionComponent}
+    {path:'faq-accordion',component:FaqAccordionComponent},
+    {path:'jokes',component:JokesComponent}
 ];
